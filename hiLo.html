@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HiLo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="hiLo.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div id="leaderboard" style="text-align: center;">
+
+        </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.getElementById("leaderboard").innerHTML=printLB();
+</script>
+<style>
+.j {
+      display: inline-block;
+      margin: 0;
+      animation: jump 2s infinite;
+  }
+
+  @keyframes jump {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-2px);}
+    100% {transform: translateY(0px);}
+  }
+</style>
